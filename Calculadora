@@ -1,1 +1,30 @@
+#calculadora simples
+
+
+numero1 = 0
+numero2 = 0
+resultado = 0
+operaçao = ''
+
+while True:
+    numero1 = int(input('Digite o numero 1:'))
+    operaçao = input('Digite a operação: ')
+    numero2 = int(input('Digite o numero 2:'))
+
+    if operaçao == '+':
+        resultado = numero1 + numero2
+    elif operaçao == '-':
+        resultado = numero1 - numero2
+    elif operaçao == '/':
+        resultado = numero1 / numero2
+    elif operaçao == '*':
+        resultado = numero1 * numero2
+    else:
+        resultado = 'Operção inválida'
+
+    print(str(numero1) + ' ' + str(operaçao) + ' ' + str(numero2) + ' = ' + str(resultado))
+
+
+
+
 
